@@ -20,7 +20,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   const register = async (name, email, password) => {
-    const { data } = await API.post("/auth/register", {
+    const { data } = await API.post("/api/auth/register", {
       name,
       email,
       password,
